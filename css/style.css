@@ -26,16 +26,16 @@ nav a {
   height: 100vh;
   position: relative;
 }
-.red {
+#red {
   background-color: red;
 }
-.green {
+#green {
   background-color: green;
 }
-.yellow {
+#yellow {
   background-color: yellow;
 }
-.yellow .product .text {
+#yellow .product .text {
   color: green;
 }
 .product {
