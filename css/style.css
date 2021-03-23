@@ -5,27 +5,53 @@
   font-family: "Rubik Mono One", sans-serif;
 }
 
+nav {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 1;
+}
+nav ul li {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: white;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
 .container {
   height: 100vh;
-  background-color: red;
   position: relative;
 }
-
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.yellow .product .text {
+  color: green;
+}
 .product {
   text-align: center;
   padding-bottom: 5%;
-  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .product img {
+  width: 80%;
   text-align: center;
-  width: 90%;
 }
 .product .text {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: yellow;
 }
